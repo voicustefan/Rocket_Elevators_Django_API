@@ -10,7 +10,7 @@ class Employees(models.Model):
     password = models.CharField(max_length=255, blank=True, null=True)
     created_at = models.DateTimeField()
     updated_at = models.DateTimeField()
-    facial_keypoints = models.CharField(max_length=255, blank=True, null=True)
+    facial_keypoints = models.CharField(max_length=2000, blank=True, null=True)
 
     class Meta:
         managed = False
